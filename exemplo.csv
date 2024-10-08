@@ -1,0 +1,3 @@
+nome, quantidade, preco, disponibilidade
+caneta, 10, 2.80, True
+lapiz, 8, 1.75, False
