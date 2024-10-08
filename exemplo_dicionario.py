@@ -24,4 +24,4 @@ carrinho.append(produto_02)
 print(carrinho)
 
 carinho_json = json.dumps(carrinho)
-print(carinho_json)
+print(carinho_json) 
