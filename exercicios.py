@@ -51,3 +51,4 @@ total_compras: float = 0
 for item in lista_frutas:
     total_compras += dict_frutas[item]
 print(f'total da compra: {total_compras}')
+
