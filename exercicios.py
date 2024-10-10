@@ -212,3 +212,69 @@ for letra in string:
 
 print(contagem)
 
+#exercicios funcoes
+
+#Escreva uma função que receba uma lista de números e retorne a soma de todos os números.
+lista_numeros: list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+def soma(numeros: list):
+    soma = 0
+    for n in numeros:
+        soma += n
+    return soma
+
+print(soma(lista_numeros))
+
+#Crie uma função que receba um número como argumento e retorne True se o número for primo e False caso contrário.
+def primo(num: int) -> bool:
+    if num < 2:
+        return False
+    for i in range(2, num):
+        if num % i == 0:
+            return False
+    return True
+
+print(primo(7))
+print(primo(6))
+print(primo(99))
+
+#Desenvolva uma função que receba uma string como argumento e retorne essa string revertida.
+def reverte_string(string):
+    return string[::-1]
+
+string = "teste 123"
+reverso = reverte_string(string)
+print(reverso)
+
+#Implemente uma função que receba dois argumentos: uma lista de números e um número. A função deve retornar todas as combinações de pares na lista que somem ao número dado.
+lista_numeros: list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+numero: int = 5
+
+def soma_pares(numeros: list, num: int) -> list:
+    pares: list = []
+    for num in numeros:
+        if (num + numero) % 2 == 0:
+            print(f'{num} + {numero} = {num + numero}')
+            pares.append(num)
+    return pares
+
+soma_pares(lista_numeros, numero)
+
+#Escreva uma função que receba um dicionário e retorne uma lista de chaves ordenadas
+dicionario: dict = {    
+    "chave_04": "valor_04",
+    "chave_01": "valor_01",
+    "chave_03": "valor_03",
+    "chave_02": "valor_02"
+}
+
+def ordenar_chaves(dicionario: dict) -> list:
+    chaves: list = []
+    for c, v in dicionario.items():
+        chaves.append(c)
+
+    return sorted(chaves)
+
+print(ordenar_chaves(dicionario))
+
